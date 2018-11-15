@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="titleH1">
+        <h1 id="title">Privacy Survey</h1>
+    </div>
+    <div id="main">
+        <div style="padding-top:1px;">
+            <p id="description" class="gap">
+                This is a survey/feedback, asking users about major web activity and
+                their opinion about being tracked.
+            </p>
+            <br>
+            <form id="survey-form" action="">
+                <div class="gap">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" placeholder="enter real name or Anonymous" name="Name" required>
+                </div>
+                <div class="gap">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" placeholder="will not be shared" name="Email" required>
+                </div>
+                <div class="gap">
+                    <label for="number" id="number-label">Age:</label>
+                    <input type="number" id="number" placeholder="enter valid age" name="Age" min="5" max="150"
+                        required>
+                </div>
+                <div class="gap">
+                    <!--drop down here-->
+                    <p>Major time spent on: </p>
+                    <select name="activityDropdown" id="dropdown" required>
+                        <option value="shopping">Shopping</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="education">Education</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="gap" name="trackingQuestion">
+                    <p>Does being tracked bother you?</p>
+                    <input type="radio" name="trackingAnswer" value="Yes" checked>Yes<br>
+                    <input type="radio" name="trackingAnswer" value="No">No<br>
+                    <input type="radio" name="trackingAnswer" value="Maybe">Maybe<br>
+                    <input type="radio" name="trackingAnswer" value="casual">Never given it any thought<br>
+                </div>
+                <div class="gap" name="activityQuestion">
+                    <p>Which social sites do you visit mostly?</p>
+                    <input type="checkbox" name="activityAnswer" value="Google">Google+<br>
+                    <input type="checkbox" name="activityAnswer" value="Twitter">Twitter<br>
+                    <input type="checkbox" name="activityAnswer" value="Facebook">Facebook<br>
+                    <input type="checkbox" name="activityAnswer" value="Instagram">Instagram<br>
+                    <input type="checkbox" name="activityAnswer" value="Youtube">Youtube<br>
+                    <input type="checkbox" name="activityAnswer" value="Reddit">Reddit<br>
+                    <input type="checkbox" name="activityAnswer" value="LinkedIn">LinkedIn<br>
+                    <input type="checkbox" name="activityAnswer" value="Others">Others<br>
+                </div>
+                <div>
+                    <div class="gapTextArea" name="opinionBox">
+                        <p>What's your opinion about tracking and online privacy in general?</p>
+                        <textarea id="textArea" placeholder="can be skipped"></textarea>
+                    </div>
+                    <div class="Button">
+                        <button type="submit" value="Submit" id="submit" class="center">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
